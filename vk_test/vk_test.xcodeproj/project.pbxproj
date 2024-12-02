@@ -16,6 +16,9 @@
 		FDFEEDD32CFE064600EA7CAE /* vk_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFEEDD22CFE064600EA7CAE /* vk_testTests.swift */; };
 		FDFEEDDD2CFE064600EA7CAE /* vk_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFEEDDC2CFE064600EA7CAE /* vk_testUITests.swift */; };
 		FDFEEDDF2CFE064600EA7CAE /* vk_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFEEDDE2CFE064600EA7CAE /* vk_testUITestsLaunchTests.swift */; };
+		FDFEEDEC2CFE0A4F00EA7CAE /* work_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFEEDEB2CFE0A4F00EA7CAE /* work_API.swift */; };
+		FDFEEDEE2CFE153800EA7CAE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FDFEEDED2CFE153800EA7CAE /* Podfile */; };
+		FDFEEDF12CFE216200EA7CAE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FDFEEDF02CFE216200EA7CAE /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		FDFEEDD82CFE064600EA7CAE /* vk_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vk_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFEEDDC2CFE064600EA7CAE /* vk_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vk_testUITests.swift; sourceTree = "<group>"; };
 		FDFEEDDE2CFE064600EA7CAE /* vk_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vk_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDFEEDEB2CFE0A4F00EA7CAE /* work_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = work_API.swift; sourceTree = "<group>"; };
+		FDFEEDED2CFE153800EA7CAE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFEEDF12CFE216200EA7CAE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,7 @@
 		FDFEEDAF2CFE064300EA7CAE = {
 			isa = PBXGroup;
 			children = (
+				FDFEEDED2CFE153800EA7CAE /* Podfile */,
 				FDFEEDBA2CFE064300EA7CAE /* vk_test */,
 				FDFEEDD12CFE064600EA7CAE /* vk_testTests */,
 				FDFEEDDB2CFE064600EA7CAE /* vk_testUITests */,
@@ -102,6 +109,7 @@
 				FDFEEDBB2CFE064300EA7CAE /* AppDelegate.swift */,
 				FDFEEDBD2CFE064300EA7CAE /* SceneDelegate.swift */,
 				FDFEEDBF2CFE064300EA7CAE /* ViewController.swift */,
+				FDFEEDEB2CFE0A4F00EA7CAE /* work_API.swift */,
 				FDFEEDC12CFE064300EA7CAE /* Main.storyboard */,
 				FDFEEDC42CFE064500EA7CAE /* Assets.xcassets */,
 				FDFEEDC62CFE064500EA7CAE /* LaunchScreen.storyboard */,
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = vk_test;
+			packageProductDependencies = (
+				FDFEEDF02CFE216200EA7CAE /* Alamofire */,
+			);
 			productName = vk_test;
 			productReference = FDFEEDB82CFE064300EA7CAE /* vk_test.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = FDFEEDAF2CFE064300EA7CAE;
+			packageReferences = (
+				FDFEEDEF2CFE1F7600EA7CAE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FDFEEDB92CFE064300EA7CAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +247,7 @@
 			files = (
 				FDFEEDC82CFE064500EA7CAE /* LaunchScreen.storyboard in Resources */,
 				FDFEEDC52CFE064500EA7CAE /* Assets.xcassets in Resources */,
+				FDFEEDEE2CFE153800EA7CAE /* Podfile in Resources */,
 				FDFEEDC32CFE064300EA7CAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDFEEDC02CFE064300EA7CAE /* ViewController.swift in Sources */,
+				FDFEEDEC2CFE0A4F00EA7CAE /* work_API.swift in Sources */,
 				FDFEEDBC2CFE064300EA7CAE /* AppDelegate.swift in Sources */,
 				FDFEEDBE2CFE064300EA7CAE /* SceneDelegate.swift in Sources */,
 			);
@@ -601,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDFEEDEF2CFE1F7600EA7CAE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDFEEDF02CFE216200EA7CAE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDFEEDEF2CFE1F7600EA7CAE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDFEEDB02CFE064300EA7CAE /* Project object */;
 }

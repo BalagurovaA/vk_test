@@ -1,14 +1,14 @@
 //
-//  vk_testTests.swift
-//  vk_testTests
+//  vk_taskTests.swift
+//  vk_taskTests
 //
-//  Created by Kristofer Sartorial on 12/2/24.
+//  Created by bocal on 12/4/24.
 //
 
 import XCTest
-@testable import vk_test
+@testable import vk_task
 
-final class vk_testTests: XCTestCase {
+final class vk_taskTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

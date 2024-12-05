@@ -1,12 +1,5 @@
-//
-//  AppDelegate.swift
-//  vk_test
-//
-//  Created by Kristofer Sartorial on 12/2/24.
-//
-
 import UIKit
-import Alamofire
+import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,6 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "DataAPI") // Замените "YourModelName" на имя вашей модели
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error $error), $error.userInfo)")
+            }
+        })
+        return container
+    }()
+
 
 
 }

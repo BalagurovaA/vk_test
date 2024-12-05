@@ -1,13 +1,13 @@
 //
-//  vk_testUITestsLaunchTests.swift
-//  vk_testUITests
+//  vk_taskUITestsLaunchTests.swift
+//  vk_taskUITests
 //
-//  Created by Kristofer Sartorial on 12/2/24.
+//  Created by bocal on 12/4/24.
 //
 
 import XCTest
 
-final class vk_testUITestsLaunchTests: XCTestCase {
+final class vk_taskUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

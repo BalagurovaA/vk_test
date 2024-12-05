@@ -1,13 +1,13 @@
 //
-//  vk_testUITests.swift
-//  vk_testUITests
+//  vk_taskUITests.swift
+//  vk_taskUITests
 //
-//  Created by Kristofer Sartorial on 12/2/24.
+//  Created by bocal on 12/4/24.
 //
 
 import XCTest
 
-final class vk_testUITests: XCTestCase {
+final class vk_taskUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
